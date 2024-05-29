@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-color: #F7ECDE;
+}
+.header{
+    position: relative;
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    isolation: isolate;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+    z-index: -1;
+    background-color: #FEC260;
+    transition: height 0.5s;
+}
+.header:hover::before{
+    height: 70%;
+}
+.content{
+    border-width: 2px 0px 2px 0px;
+    border-style: dotted;
+    border-color: black;
+}
+.content .gradient{
+    font-family: "Righteous", sans-serif;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+form label{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+}
